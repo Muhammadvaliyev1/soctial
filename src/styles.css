@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle {
+    width: 64px;
+    height: 30px;
+    border-radius: 9999px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    transition: background-color 0.3s;
+}
+.toggle-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    position: absolute;
+    top: 1.5px;
+    left: 2.6px;
+    transition: transform 0.5s;
+    box-shadow: 0px 3px 11px 0px #00000026;
+}
+.toggle.sun .toggle-thumb {
+    transform: translateX(32.3px);
+}
+
+.bg-hero {
+    background-image: url(/public/img/hero-light-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  
+  .dark .bg-hero {
+    background-image: url(/public/img/hero-bg.webp);
+  }
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container1 {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
